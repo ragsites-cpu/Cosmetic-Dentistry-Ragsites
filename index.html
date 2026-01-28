@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragsites | Premium Cosmetic Dentistry Leads</title>
+    <meta name="description"
+        content="Get 20 qualified cosmetic patients in 90 days or you don't pay. Exclusive lead generation for cosmetic dentistries by ragsites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0F4C81;
+            --accent-blue: #1E88E5;
+            --light-blue: #E3F2FD;
+            --dark-blue: #0A3A5E;
+            --white: #FFFFFF;
+            --off-white: #F8FAFC;
+            --text-dark: #1A202C;
+            --text-gray: #4A5568;
+            --gold: #FFD700;
+            --gradient-primary: linear-gradient(135deg, #0F4C81 0%, #1E88E5 100%);
+            --gradient-accent: linear-gradient(135deg, #1E88E5 0%, #42A5F5 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .niche-badge {
+            font-family: 'Bebas Neue', 'Impact', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 80px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            display: block;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .niche-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--white);
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease-out;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .guarantee-box {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: scaleIn 0.8s ease-out 0.4s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guarantee-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-accent);
+        }
+
+        .guarantee-box h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .guarantee-highlight {
+            color: var(--accent-blue);
+            position: relative;
+            display: inline-block;
+        }
+
+        .guarantee-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: var(--gold);
+            opacity: 0.3;
+            border-radius: 4px;
+        }
+
+        .guarantee-subtext {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        /* DSL Section */
+        .dsl-section {
+            padding: 100px 20px;
+            background: var(--gradient-primary);
+            position: relative;
+            color: var(--white);
+        }
+
+        .dsl-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            font-size: 1.3rem;
+            color: var(--white);
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .dsl-placeholder {
+            background: var(--white);
+            padding: 60px;
+            border-radius: 24px;
+            border: 2px dashed var(--accent-blue);
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .dsl-placeholder h3 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .dsl-placeholder p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+        }
+
+        /* Booking Section */
+        .booking-section {
+            padding: 100px 20px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .booking-widget {
+            max-width: 700px;
+            margin: 60px auto 0;
+            background: var(--white);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .booking-widget h3 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .booking-form input,
+        .booking-form select,
+        .booking-form textarea {
+            width: 100%;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border: 2px solid #E2E8F0;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            background: var(--off-white);
+        }
+
+        .booking-form input:focus,
+        .booking-form select:focus,
+        .booking-form textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+        }
+
+        .booking-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 20px 40px;
+            background: var(--gradient-accent);
+            color: var(--white);
+            border: none;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(30, 136, 229, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(30, 136, 229, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: var(--text-dark);
+            color: #CBD5E0;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .disclaimer p {
+            max-width: 1000px;
+            margin: 0 auto 15px;
+        }
+
+        .disclaimer strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .niche-badge {
+                font-size: 0.9rem;
+                padding: 12px 24px;
+            }
+
+            .guarantee-box {
+                padding: 30px 20px;
+            }
+
+            .guarantee-box h2 {
+                font-size: 1.8rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .dsl-placeholder {
+                padding: 40px 20px;
+            }
+
+            .booking-widget {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo.jpg" alt="ragsites logo" class="logo">
+            <div class="niche-badge">
+                🦷 ONLY For Cosmetic Dentistries
+            </div>
+
+            <div class="guarantee-box">
+                <h2>
+                    We'll Guarantee You <span class="guarantee-highlight">20 Qualified Cosmetic Patients</span> in 90
+                    Days or You Don't Pay
+                </h2>
+                <p class="guarantee-subtext">
+                    Zero risk. Maximum results. Built exclusively for cosmetic dental practices.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- DSL Section (Placeholder) -->
+    <section class="dsl-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Our Proven Process</h2>
+                <p>A systematic approach to generating high-quality cosmetic dentistry patients for your practice</p>
+            </div>
+
+            <div class="dsl-placeholder">
+                <h3>📋 Lead Nurturing Process</h3>
+                <p>This section will be populated with your custom DSL content to showcase your proven lead nurturing
+                    methodology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="section-container">
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Grow Your Practice?</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 20px; opacity: 0.95;">
+                Schedule a free consultation to see if your practice qualifies
+            </p>
+
+            <div class="booking-widget">
+                <h3>Book Your Strategy Call</h3>
+                <iframe src="https://api.leadconnectorhq.com/widget/booking/gzNCy8e40o7y8qafZynN"
+                    style="width: 100%; height: 700px; border: none; border-radius: 12px;" scrolling="no">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook Disclaimer -->
+    <section class="disclaimer">
+        <p>
+            <strong>Legal Disclaimer:</strong> This site is not a part of the Facebook website or Facebook Inc.
+            Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+        </p>
+    </section>
+
+    <script>
+        // Form submission handler
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // You can integrate this with your booking system
+            console.log('Form submitted:', data);
+
+            // Show success message (you can customize this)
+            alert('Thank you! We\'ll contact you within 24 hours to schedule your strategy call.');
+
+            // Reset form
+            this.reset();
+
+            // Here you would typically send this to your backend or booking API
+            // Example: fetch('/api/book', { method: 'POST', body: JSON.stringify(data) })
+        });
+
+        // Smooth scroll for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
