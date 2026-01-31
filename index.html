@@ -360,6 +360,82 @@
             transform: translateY(0);
         }
 
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 100px 20px;
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--off-white);
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonial-stars {
+            color: #F59E0B;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-quote {
+            color: var(--text-gray);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 3px;
+        }
+
+        .testimonial-role {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+
+        .testimonial-location {
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-card {
+                padding: 25px;
+            }
+        }
+
         /* Disclaimer */
         .disclaimer {
             background: var(--text-dark);
@@ -493,6 +569,54 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h3>What Dentists Are Saying</h3>
+                <p>Real results from real dental practices</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        "I was skeptical at first. We had tried so many marketing agencies that promised the world and delivered nothing. But within 6 weeks, we had 14 new cosmetic consultations booked. Real patients, not tire kickers. My team finally has a full schedule again."
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="testimonial-name">Dr. Sarah Mitchell</p>
+                        <p class="testimonial-role">Owner, Smile Design Studio</p>
+                        <p class="testimonial-location">Austin, TX</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        "The AI calling system changed everything for us. We used to lose leads because my front desk couldnt get to every call. Now every inquiry gets a response in under a minute. Last month we closed 8 veneer cases directly from those calls."
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="testimonial-name">Dr. Michael Chen</p>
+                        <p class="testimonial-role">Prosthodontist</p>
+                        <p class="testimonial-location">Seattle, WA</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-quote">
+                        "What impressed me most was the quality of patients. These werent people looking for the cheapest option. They came in educated about our services, ready to discuss treatment. Our case acceptance rate went from 40% to over 70%."
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="testimonial-name">Dr. Amanda Rodriguez</p>
+                        <p class="testimonial-role">Cosmetic Dentist</p>
+                        <p class="testimonial-location">Miami, FL</p>
+                    </div>
                 </div>
             </div>
         </div>
