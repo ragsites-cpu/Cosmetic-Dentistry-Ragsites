@@ -215,19 +215,42 @@
             margin-bottom: 60px;
         }
 
-        .section-header h2 {
-            font-size: 4rem;
+        .section-header h3 {
+            font-size: 3.5rem;
             font-weight: 800;
             color: var(--primary-blue);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .section-header p {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--text-gray);
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 0 auto 10px;
+            line-height: 1.6;
+        }
+
+        .section-header .loading-text {
+            font-size: 0.95rem;
+            font-style: italic;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .watch-time-tag {
+            display: inline-block;
+            background: #EFF6FF;
+            /* Very light blue */
+            color: var(--primary-blue);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border: 1px solid var(--accent-blue);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .dsl-placeholder {
@@ -455,8 +478,13 @@
     <section class="dsl-section">
         <div class="section-container">
             <div class="section-header">
-                <h2>Our Proven Process</h2>
-                <p>A systematic approach to generating high-quality cosmetic dentistry patients for your practice</p>
+                <h3>Dent AI</h3>
+                <p>A systematic approach to generating high-quality cosmetic dentistry patients for your practice with
+                    full HIPAA compliance</p>
+                <div class="watch-time-tag">
+                    ⏱️ Watch time: 6 minutes 17 seconds
+                </div>
+                <p class="loading-text">Please allow 3-5 seconds for the video to load</p>
             </div>
 
             <div class="dsl-placeholder">
