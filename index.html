@@ -592,19 +592,6 @@
                 }
             });
         });
-
-        // Track when booking section comes into view
-        let scheduleEventFired = false;
-        const bookingSection = document.querySelector('.booking-section');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !scheduleEventFired) {
-                    fbq('track', 'Schedule');
-                    scheduleEventFired = true;
-                }
-            });
-        }, { threshold: 0.3 });
-        observer.observe(bookingSection);
     </script>
 </body>
 
